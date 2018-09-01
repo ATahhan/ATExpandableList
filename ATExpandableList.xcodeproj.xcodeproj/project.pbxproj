@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D6C4F920213ACE06009F2907 /* ATExpandableList.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C4F91E213ACE06009F2907 /* ATExpandableList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6C4F927213ACEAA009F2907 /* ExpandableListItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C4F926213ACEA9009F2907 /* ExpandableListItemsView.swift */; };
+		D6C4F929213ACF24009F2907 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C4F928213ACF24009F2907 /* Extensions.swift */; };
+		D6C4F92B213ACF90009F2907 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C4F92A213ACF8F009F2907 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6C4F91B213ACE06009F2907 /* ATExpandableList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATExpandableList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C4F91E213ACE06009F2907 /* ATExpandableList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATExpandableList.h; sourceTree = "<group>"; };
 		D6C4F91F213ACE06009F2907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6C4F926213ACEA9009F2907 /* ExpandableListItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableListItemsView.swift; sourceTree = "<group>"; };
+		D6C4F928213ACF24009F2907 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D6C4F92A213ACF8F009F2907 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		D6C4F91D213ACE06009F2907 /* ATExpandableList */ = {
 			isa = PBXGroup;
 			children = (
+				D6C4F926213ACEA9009F2907 /* ExpandableListItemsView.swift */,
+				D6C4F928213ACF24009F2907 /* Extensions.swift */,
+				D6C4F92A213ACF8F009F2907 /* Color.swift */,
 				D6C4F91E213ACE06009F2907 /* ATExpandableList.h */,
 				D6C4F91F213ACE06009F2907 /* Info.plist */,
 			);
@@ -95,10 +104,11 @@
 				TargetAttributes = {
 					D6C4F91A213ACE06009F2907 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
-			buildConfigurationList = D6C4F915213ACE06009F2907 /* Build configuration list for PBXProject "ATExpandableList" */;
+			buildConfigurationList = D6C4F915213ACE06009F2907 /* Build configuration list for PBXProject "ATExpandableList.xcodeproj" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C4F927213ACEAA009F2907 /* ExpandableListItemsView.swift in Sources */,
+				D6C4F929213ACF24009F2907 /* Extensions.swift in Sources */,
+				D6C4F92B213ACF90009F2907 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +272,7 @@
 		D6C4F924213ACE06009F2907 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -268,6 +282,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ATExpandableList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,6 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AmmarAlTahhan.ATExpandableList;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +300,7 @@
 		D6C4F925213ACE06009F2907 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -293,6 +310,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ATExpandableList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,7 +327,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6C4F915213ACE06009F2907 /* Build configuration list for PBXProject "ATExpandableList" */ = {
+		D6C4F915213ACE06009F2907 /* Build configuration list for PBXProject "ATExpandableList.xcodeproj" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6C4F921213ACE06009F2907 /* Debug */,
